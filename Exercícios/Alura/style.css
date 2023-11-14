@@ -20,13 +20,14 @@ strong{
 img {
     border: 2px solid rgb(242, 242, 246);
     background-color: rgb(150, 215, 255);
+    border-radius: 16px;
     transition: 1s;  
     cursor: pointer;
 }
 
 img:hover { 
-border: 30px solid blue;
-background-color: rgb(150, 215, 255);
+border: 10px solid rgb(67, 67, 76);
+border-radius: 16px;
 transition: 1s;
 }
 
@@ -42,6 +43,9 @@ transition: 1s;
 
 .apresentacao__conteudo{
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     
 }
 
@@ -57,9 +61,10 @@ transition: 1s;
 
 .apresentacao__links{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .apresentacao__links__link{
