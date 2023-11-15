@@ -3,26 +3,39 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Estrutura Básica</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Styles/style.css">
 </head>
 <body>
     
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link " href="about.html">Sobre</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">  <!-- padrao nomeacao {Pai}__{fiho}  -->
             <h1 class="apresentacao__conteudo__titulo">Take your digital business to another level <strong class="titulo-destaque">with Power Platform expirienced developer!</strong></h1>
             <p class="apresentacao__conteudo__texto">From Power Apps, Power Automate, Power BI, Dataverse to Azure DevOps. Proficient in SharePoint integration and automation. Skilled in creating canvas and model-driven apps, custom connectors, automation workflows, dashboards, and reports. Currently expanding Power Platform Capabilities with JavaScript, C# and tools like XRM Tools and Power Platform CLI.</p>
             <div class="apresentacao__links">
                 <h2> Access my social networks:</h2>
-                <a class="apresentacao__links__link" href="https://medium.com/@jean.dosher">Medium</a>
-                <a class="apresentacao__links__link" href="https://github.com/jpdosher">GitHub</a>
+                <a class="apresentacao__links__link" href="https://medium.com/@jean.dosher">
+                    <img src="./Img/medium.svg" width="20px" height="20px" style="background-color: #22D4FD; border-radius: 50%;"> </img>
+                    Medium
+                </a> <!--Apenas para fim didádico-->
+                <a class="apresentacao__links__link" href="https://github.com/jpdosher">
+                <img src="./Img/github.png" width="20px" height="20px"> </img>
+                    GitHub
+                </a>
             </div>
         </section>
-        <img src="Img\jean_pic.jpeg" alt="Professional Image" width="30%" height="30%">
+        <img class="img__pic" src="Img\jean_pic.jpeg" alt="Professional Image" width="30%" height="30%">
     </main>
    
 
-    <footer></footer>
+    <footer class="rodape">
+        <p>@Jean-Paul Dosher</p>
+    </footer>
 </body>
