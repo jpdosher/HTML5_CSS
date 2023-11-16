@@ -42,20 +42,9 @@ strong{
 .cabecalho__menu__link{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--cor-terciaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
 
-}
-
-.apresentacao{
-    /* margin:10%; */
-    padding: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    
 }
 
 .img__pic {
@@ -75,8 +64,22 @@ border-radius: 16px;
 transition: 1s;
 }
 
+.apresentacao{
+    /* margin:10%; */
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 82px;
+    
+}
+
+
+
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -85,12 +88,12 @@ transition: 1s;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria)
 }
 
@@ -102,20 +105,20 @@ transition: 1s;
     gap: 20px;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     /* background-color: #22D4FD; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 280px;
+    width: 50%;
     text-align: center;
     padding-top: 21px;
     padding-bottom: 21px;
     border-radius: 16px;
     border-color: var(--cor-terciaria);
     border-style: solid;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none; /* não aparece o underline */
     color:var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
@@ -134,7 +137,24 @@ transition: 1s;
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto; /* evitar transbordo */
+    }
+    
 }
 
