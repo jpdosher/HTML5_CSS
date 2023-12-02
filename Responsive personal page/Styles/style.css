@@ -76,8 +76,6 @@ transition: 1s;
     
 }
 
-
-
 .apresentacao__conteudo{
     width: 50%;
     display: flex;
@@ -129,6 +127,13 @@ transition: 1s;
 .apresentacao__links__link:hover{
     background-color: var(--cor-hover);
 
+}
+
+.botFrame{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 2%;
 }
 
 .rodape{
